@@ -1,0 +1,1 @@
+-DPROD=rdm12 -g -O2 -I../dbcmn -I../rdm12

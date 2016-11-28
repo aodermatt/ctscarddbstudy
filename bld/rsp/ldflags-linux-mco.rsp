@@ -1,0 +1,1 @@
+-g -O2 -m64 -fPIC --static -MMD -D_GNU_SOURCE -DDISK_DATABASE -L/opt/extremedb-x86/target/bin -lmcolib -lmcomem -lmcovtdsk -lmconet -lmcosmp -lmcomem -lmcostrerror -lmcoslnxp -lmcomconv -lmcofu98zip -lmcotmursiw -lmcolib -lmcomem -lmcouwrt -lpthread -lm -ldl

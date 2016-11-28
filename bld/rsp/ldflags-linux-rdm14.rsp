@@ -1,0 +1,1 @@
+-g -O2 -DNEED_SETUP_DATABASE -m32 -DRDM_32BIT -L/opt/raima-x86/rdm_enterprise-14.0/include/../lib -lrdmbase -lrdmcppapi -lrdmxml -lrdmutil -lrdmrdm -lrdmddl -lrdmtfs -lrdmhttp -lrdmenc -lrdmbase -lrdmtransport -lrdmpsp -lrdmpsp -lrdmddl -lpthread -lrdmtfs -lrdmcpptfs -Wl,-rpath -Wl,/opt/raima-x86/rdm_enterprise-14.0/include/../lib

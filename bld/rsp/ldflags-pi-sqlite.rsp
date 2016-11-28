@@ -1,0 +1,1 @@
+-g -O2 -L. -lsqlite3 -lpthread

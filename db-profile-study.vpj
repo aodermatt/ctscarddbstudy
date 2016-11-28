@@ -1,0 +1,193 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+    Version="10.0"
+    VendorName="SlickEdit"
+    TemplateName="Makefile"
+    Customized="1"
+    WorkingDir=".">
+    <Config
+        Name="Release"
+        Type="Makefile"
+        OutputFile=""
+        CompilerConfigName="">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveCurrent"
+                RunFromDir="../bld"
+                ClearProcessBuffer="1">
+                <Exec CmdLine="make compile object_module=%n"/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="../bld"
+                ClearProcessBuffer="1">
+                <Exec CmdLine="make -B V= VV="/>
+            </Target>
+            <Target
+                Name="Build PI3"
+                MenuCaption="&amp;Build PI3"
+                RunFromDir="../bld"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles">
+                <Exec CmdLine="make -B V= VV= tgt=pi"/>
+            </Target>
+            <Target
+                Name="Build-rdm"
+                MenuCaption="&amp;Build-rdm"
+                RunFromDir="../bld"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                ClearProcessBuffer="1">
+                <Exec CmdLine="make -B prod=rdm"/>
+            </Target>
+            <Target
+                Name="Build-sqlite"
+                MenuCaption="&amp;Build-sqlite"
+                RunFromDir="../bld"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                ClearProcessBuffer="1">
+                <Exec CmdLine="make -B prod=sqlite"/>
+            </Target>
+            <Target
+                Name="Build-mco"
+                MenuCaption="&amp;Build-mco"
+                RunFromDir="../bld"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                ClearProcessBuffer="1">
+                <Exec CmdLine="make -B prod=mco"/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="../bld"
+                ClearProcessBuffer="1">
+                <Exec CmdLine="make clean all"/>
+            </Target>
+            <Target
+                Name="Build All"
+                MenuCaption="&amp;Build All"
+                RunFromDir="../bld"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles">
+                <Exec CmdLine="make build-all"/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                SaveOption="SaveNone"
+                RunFromDir="../bld">
+                <Exec CmdLine="make load-debugger"/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveNone"
+                RunFromDir="../bld">
+                <Exec CmdLine="make run "/>
+            </Target>
+            <Target
+                Name="Clean"
+                MenuCaption="&amp;Clean"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="../bld">
+                <Exec CmdLine="make clean"/>
+            </Target>
+            <Target
+                Name="Zip"
+                MenuCaption="&amp;Zip"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="../bld">
+                <Exec CmdLine="mk zip"/>
+            </Target>
+        </Menu>
+    </Config>
+    <CustomFolders>
+        <Folder
+            Name="Source Files"
+            Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go"/>
+        <Folder
+            Name="Header Files"
+            Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.inc;*.sh;*.cpy;*.if">
+        </Folder>
+        <Folder
+            Name="Resource Files"
+            Filters="*.ico;*.cur;*.dlg"/>
+        <Folder
+            Name="Bitmaps"
+            Filters="*.bmp"/>
+        <Folder
+            Name="Other Files"
+            Filters="">
+        </Folder>
+    </CustomFolders>
+    <Files AutoFolders="DirectoryView">
+        <Folder Name="../">
+            <F
+                N="../*.c*"
+                Recurse="1"
+                Excludes="db-profile-study.vpj;db-profile-study.vpw;db-profile-study.vpwhistu;db-profile-study.vtg"/>
+            <F
+                N="../*.ddl"
+                Recurse="1"
+                Excludes=""/>
+            <F
+                N="../*.h*"
+                Recurse="1"
+                Excludes="db-profile-study.vpj;db-profile-study.vpw;db-profile-study.vpwhistu;db-profile-study.vtg"/>
+            <F
+                N="../*.log"
+                Recurse="1"
+                Excludes="db-profile-study.vpj;db-profile-study.vpw;db-profile-study.vpwhistu;db-profile-study.vtg"/>
+            <F
+                N="../*.mak"
+                Type="Makefile"
+                Recurse="1"
+                Excludes="db-profile-study.vpj;db-profile-study.vpw;db-profile-study.vpwhistu;db-profile-study.vtg"/>
+            <F
+                N="../*.mco"
+                Recurse="1"
+                Excludes=""/>
+            <F
+                N="../*.o"
+                Recurse="1"
+                Excludes=""/>
+            <F
+                N="../*.rsp"
+                Recurse="1"
+                Excludes="db-profile-study.vpj;db-profile-study.vpw;db-profile-study.vpwhistu;db-profile-study.vtg"/>
+            <F
+                N="../*.sql"
+                Recurse="1"
+                Excludes=""/>
+            <F
+                N="../*.txt"
+                Recurse="1"
+                Excludes="db-profile-study.vpj;db-profile-study.vpw;db-profile-study.vpwhistu;db-profile-study.vtg"/>
+            <F
+                N="../Make*"
+                Recurse="1"
+                Excludes="db-profile-study.vpj;db-profile-study.vpw;db-profile-study.vpwhistu;db-profile-study.vtg"/>
+            <F
+                N="../main-*"
+                Recurse="1"
+                Excludes=""/>
+        </Folder>
+        <Folder Name="../sorted-pop-file">
+            <F
+                N="../sorted-pop-file/makefile"
+                Type="Makefile"/>
+        </Folder>
+    </Files>
+</Project>

@@ -1,0 +1,1 @@
+-g -O2 -DNEED_SETUP_DATABASE -m64 -DRDM_64BIT -L/opt/raima-x86/rdm-12.0/include/../lib -lrdmbase -lrdmcppapi -lrdmxml -lrdmutil -lrdmrdm -lrdmddl -lrdmtfs -lrdmhttp -lrdmenc -lrdmbase -lrdmtransport -lrdmpsp -lrdmpsp -lrdmddl -lrdmha -lpthread

@@ -1,0 +1,27 @@
+
+Compiling ../dbcmn/database_profiler.cpp
+g++ @rsp/cppflags-linux32-rdm14.rsp -c ../dbcmn/database_profiler.cpp -o ../obj/rdm14/linux32/database_profiler.o
+
+Compiling ../dbcmn/main-db-metrics.cpp
+g++ @rsp/cppflags-linux32-rdm14.rsp -c ../dbcmn/main-db-metrics.cpp -o ../obj/rdm14/linux32/main-db-metrics.o
+
+Compiling ../dbcmn/saltedkey.cpp
+g++ @rsp/cppflags-linux32-rdm14.rsp -c ../dbcmn/saltedkey.cpp -o ../obj/rdm14/linux32/saltedkey.o
+
+Compiling ../rdm14/cardsdb_cat.c
+gcc @rsp/cflags-linux32-rdm14.rsp -c ../rdm14/cardsdb_cat.c -o ../obj/rdm14/linux32/cardsdb_cat.o 
+
+Compiling ../rdm14/rdm14-db.cpp
+g++ @rsp/cppflags-linux32-rdm14.rsp -c ../rdm14/rdm14-db.cpp -o ../obj/rdm14/linux32/rdm14-db.o
+
+Compiling ../rdm14/cardsdb_api.cpp
+g++ @rsp/cppflags-linux32-rdm14.rsp -c ../rdm14/cardsdb_api.cpp -o ../obj/rdm14/linux32/cardsdb_api.o
+
+Linking ../deploy/main-rdm14-linux32-benchmark
+g++ @rsp/ldobjs-linux32-rdm14.rsp @rsp/ldflags-linux32-rdm14.rsp -o ../deploy/main-rdm14-linux32-benchmark
+ls -la ../deploy/main-rdm14-linux32-benchmark
+-rwxrwxr-x 1 cubic cubic 486048 Nov 22 09:57 ../deploy/main-rdm14-linux32-benchmark
+
+../deploy/main-rdm14-linux32-benchmark up to date: warning no Makefile hdr dependencies yet!
+'make todo' shows todo items
+

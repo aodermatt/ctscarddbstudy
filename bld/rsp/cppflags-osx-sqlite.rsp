@@ -1,0 +1,1 @@
+-DPROD=sqlite -std=c++11 -g -O2 -I../dbcmn -I../sqlite

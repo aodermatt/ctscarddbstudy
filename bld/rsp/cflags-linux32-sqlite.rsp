@@ -1,0 +1,1 @@
+-DPROD=sqlite -g -O2 -I../dbcmn -I../sqlite

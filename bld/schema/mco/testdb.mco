@@ -1,0 +1,19 @@
+declare database testdb;
+
+#define int1      signed<1>
+#define int2      signed<2>
+#define int4      signed<4>
+#define uint8   unsigned<8>
+#define uint4   unsigned<4>
+#define uint2   unsigned<2>
+#define uint1   unsigned<1>
+
+#define SALTED_KEY_SZ 35
+
+persistent class ListEntry {
+    char<SALTED_KEY_SZ>  salted_key;    /* encrypted credit card number encoded by host/device credit card reader, download host synchronization */  
+    uint1                is_good;       /* if blacklisted set to false  */
+    uint8                meta_info;     
+
+    unique tree<salted_key> by_salted_key;
+};

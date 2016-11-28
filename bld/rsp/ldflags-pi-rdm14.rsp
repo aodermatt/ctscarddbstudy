@@ -1,0 +1,1 @@
+-g -O2 -DNEED_SETUP_DATABASE -fPIC -L/opt/raima-arm/rdm_enterprise-14.0/include/../target/lnx-arm-gnueabihf/lib -lrdmbase -lrdmcppapi -lrdmxml -lrdmutil -lrdmrdm -lrdmddl -lrdmtfs -lrdmhttp -lrdmenc -lrdmbase -lrdmtransport -lrdmpsp -lrdmpsp -lrdmddl -lpthread -lrdmtfs -lrdmcpptfs -lrdmtx -Wl,-rpath -Wl,/opt/raima-arm/rdm_enterprise-14.0/include/../lib

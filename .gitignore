@@ -1,0 +1,6 @@
+# Generated from build system
+sled/
+!sled/*.vp[wj]
+obj/
+deploy/main-*-*-benchmark*
+deploy/*.sks

@@ -1,0 +1,1 @@
+-g -O2 -fPIC -static -MMD -D_GNU_SOURCE -DDISK_DATABASE -L/opt/extremedb-arm/target/bin -lmcolib -lmcomem -lmcovtdsk -lmconet -lmcosmp -lmcomem -lmcostrerror -lmcoslnxp -lmcomconv -lmcofu98zip -lmcotmvcc -lmcolib -lmcomem -lmcouwrt -lpthread -lm -ldl
